@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Oak &amp; Honey Cafe</title>
+<meta name="description" content="Oak & Honey Cafe: coffee, breakfast, lunch and fresh bakes in Greenfield.">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#home">Oak &amp; Honey</a>
+<button id="tog" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav aria-label="Main"><ul id="menu">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#menu-page">Menu</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav></div></header>
+
+<main>
+<div class="page" id="home"><div class="wrap">
+<div class="hero"><div>
+<p class="tag">Welcome to Oak &amp; Honey Cafe</p>
+<h1>Slow coffee, good food, a seat for you.</h1>
+<p>A small neighbourhood café in Greenfield. Come in for a quiet study hour, a quick lunch or a long weekend breakfast.</p>
+<div class="acts"><a class="btn" href="#menu-page">See the menu</a><a class="btn alt" href="#contact">Plan your visit</a></div>
+</div><div class="ph" role="img" aria-label="Placeholder photo of a latte">☕</div></div>
+
+<section><h2>Popular today</h2><p>The dishes and drinks our regulars order most.</p><div class="grid" id="pop"></div></section>
+
+<div class="band two"><div><h2>Come say hello</h2><p>We’re across from Greenfield Park, two minutes from the number 4 and 11 bus stops.</p><a class="btn" href="#contact">Get directions</a></div>
+<dl><div><dt>Mon–Fri</dt><dd>7 AM – 8 PM</dd></div><div><dt>Saturday</dt><dd>8 AM – 9 PM</dd></div><div><dt>Sunday</dt><dd>8 AM – 9 PM</dd></div></dl></div>
+</div></div>
+
+<div class="page" id="about"><div class="wrap">
+<section class="two"><div><h1>Our story</h1>
+<p>Oak &amp; Honey began in 2019 with one espresso machine, one oven and a lot of borrowed chairs. Two friends wanted a place where students could stay all afternoon and neighbours could catch up without watching the clock.</p>
+<p>Today we bake every morning, roast with a local partner and change the menu with the seasons. The room is still full of borrowed chairs. We kept them on purpose.</p></div>
+<div class="ph" style="--c:#c9b79c;--s:7rem" role="img" aria-label="Placeholder photo of the café interior">🪴</div></section>
+<section><h2>What we believe in</h2><div class="values">
+<div class="card"><div class="in"><h3>Made fresh</h3><p>Bread, pastries and sauces are made in-house every day.</p></div></div>
+<div class="card"><div class="in"><h3>Local first</h3><p>Milk, eggs and produce come from farms within 50 km.</p></div></div>
+<div class="card"><div class="in"><h3>No rush</h3><p>Stay as long as you like. Free Wi-Fi and plenty of sockets.</p></div></div>
+</div></section></div></div>
+
+<div class="page" id="menu-page"><div class="wrap">
+<section><h1>Menu</h1><p>Prices include tax. Ask us about oat, soy or almond milk, and gluten-free bread.</p>
+<div class="tabs" role="group" aria-label="Menu categories" id="tabs"></div>
+<div class="grid" id="items"></div></section></div></div>
+
+<div class="page" id="contact"><div class="wrap">
+<section class="two" style="align-items:start"><div>
+<h1>Contact us</h1><p>Questions, bookings for groups or feedback? Send a message and we’ll reply within one working day.</p>
+<dl><div><dt>Phone</dt><dd><a href="tel:+15550142736">(555) 014-2736</a></dd></div>
+<div><dt>Email</dt><dd><a href="mailto:hello@oakandhoney.com">hello@oakandhoney.com</a></dd></div>
+<div><dt>Address</dt><dd>21 Garden Lane, Greenfield, GF 1024</dd></div>
+<div><dt>Hours</dt><dd>Mon–Fri 7–8, Sat 8–9, Sun 8–9</dd></div></dl>
+<div class="ph" style="--r:16/9;--c:#c9d3b5;margin-top:20px" role="img" aria-label="Map placeholder">📍 Map goes here</div></div>
+<form id="f" novalidate>
+<label>Your name<input id="n" autocomplete="name"><span class="err" id="en"></span></label>
+<label>Email<input id="e" type="email" autocomplete="email"><span class="err" id="ee"></span></label>
+<label>Reason<select id="r"><option>General question</option><option>Group booking</option><option>Feedback</option></select></label>
+<label>Message<textarea id="m" rows="5"></textarea><span class="err" id="em"></span></label>
+<button class="btn" type="submit">Send message</button>
+<div id="ok" role="status"></div></form></section></div></div>
+</main>
+
+<footer><div class="wrap">
+<div><p style="font-family:'Young Serif',Georgia,serif;font-size:1.3rem">Oak &amp; Honey Cafe</p><p>21 Garden Lane, Greenfield, GF 1024</p><p>© 2026 Oak &amp; Honey Cafe</p></div>
+<div><p>Follow us</p><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a><a href="https://x.com" target="_blank" rel="noopener">X</a></div>
+</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
